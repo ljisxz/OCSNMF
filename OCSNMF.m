@@ -3,7 +3,7 @@
  
  
       options = [];
-      options.Metric = 'Euclidean';
+      options.Metric = 'cosine';
       options.NeighborMode = 'KNN';
       options.k =Options.k;
       options.WeightMode ='Binary'; 
@@ -25,4 +25,5 @@
           objective(iters)=sum(sum((W - V*V').^2));
       end
       %toc
+
  end
